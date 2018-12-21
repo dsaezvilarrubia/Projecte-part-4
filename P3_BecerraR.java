@@ -44,6 +44,7 @@ public class P3_BecerraR {
         int id=0,anyNaix=0,mesNaix=0,genere=0,categoria=0,club=0;
         int i=0,participant=0,contador=0, ordenar=0;
         int [] [] participants = new int [10][6];
+        int altre = 0;
         int noFed = 0;
         int bcn = 0;
         int tgna = 0;
@@ -254,6 +255,7 @@ public class P3_BecerraR {
                     equip=GIR;
                     break;  
                 case 5:
+                    altre += 1;
                     equip=poblacio;
                     break;
             } // Mostrar les dades de l'usuari
@@ -510,6 +512,7 @@ public class P3_BecerraR {
                 System.out.println("Numero de participants del Tarragona: " + tgna );
                 System.out.println("Numero de participants del Hospitalet: " + hosp);
                 System.out.println("Numero de participants del Girona: " + gir);
+                System.out.println("Numero de participants de altres clubs: " + altre);
             }
             if(ordenar == 0){
                 System.out.println("Gracies per fer servir aquest programa :)!");
